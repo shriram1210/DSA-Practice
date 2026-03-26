@@ -7,7 +7,7 @@ Language: Java
 
 ### Sorting Algorithms
 - [x] Bubble Sort
-- [ ] Insertion Sort
+- [x] Insertion Sort
 - [ ] Selection Sort
 - [ ] Merge Sort
 - [ ] Quick Sort
