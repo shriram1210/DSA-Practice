@@ -9,7 +9,7 @@ Language: Java
 - [x] Bubble Sort
 - [x] Insertion Sort
 - [x] Selection Sort
-- [ ] Merge Sort
+- [x] Merge Sort
 - [ ] Quick Sort
 - [ ] Heap Sort
 
