@@ -1,0 +1,51 @@
+import java.util.*;
+
+public class merge_sort {
+    public static void merge(int arr[],int st,int mid,int end){
+      List<Integer>temp=new ArrayList<>();
+      int i=st,j=mid+1;
+      while (i<=mid && j<=end) {
+        if(arr[i]<= arr[j]){
+            temp.add(arr[i]);
+            i++;
+        }else{
+            temp.add(arr[j]);
+            j++;
+        }
+    }
+        while(i<=mid){
+            temp.add(arr[i]);
+            i++;
+        }
+        while(j<=end){
+            temp.add(arr[j]);
+            j++;
+        }
+
+        for(int k=0;k<temp.size();k++){
+            arr[st+k]=temp.get(k);
+        }
+        
+      }  
+    
+
+    public static void mergeSort(int arr[],int st,int end){
+        if(st<end){
+            int mid=st+(end-st)/2;
+            mergeSort(arr, st, mid);
+            mergeSort(arr,mid+1, end);
+
+            merge( arr, st, mid,end);
+        }
+    }
+    public static void main(String[] args) {
+        int arr[]={10,25,8,6,58,4,25};
+
+        mergeSort(arr,0,arr.length-1);
+        for (int value : arr) {
+System.out.print(value + " ");
+
+    }
+
+    }
+}
