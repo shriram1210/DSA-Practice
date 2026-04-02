@@ -6,6 +6,8 @@ Language: Java
 ## ✅ Progress Tracker
 ### Problem on Recursion
 -  [x] Tiling Problem
+-  [x]Remove Duplicates From String
+-  [ ] Friends Pairing Problem
 ### Sorting Algorithms
 - [x] Bubble Sort
 - [x] Insertion Sort
