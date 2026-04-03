@@ -1,0 +1,28 @@
+public class FriendsPairing {
+
+```
+// Function to find number of ways
+public static int countWays(int n) {
+
+    // Base cases
+    if (n == 0 || n == 1) {
+        return 1;
+    }
+
+    // Single choice
+    int single = countWays(n - 1);
+
+    // Pair choice
+    int pair = (n - 1) * countWays(n - 2);
+
+    // Total ways
+    return single + pair;
+}
+
+public static void main(String[] args) {
+    int n = 4;  // number of friends
+    System.out.println("Total ways = " + countWays(n));
+}
+```
+
+}
