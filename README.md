@@ -8,6 +8,7 @@ Language: Java
 -  [x] Tiling Problem
 -  [x] Remove Duplicates From String
 -  [x] Friends Pairing Problem
+-  [x] Binary String Problem
 ### Sorting Algorithms
 - [x] Bubble Sort
 - [x] Insertion Sort
