@@ -1,0 +1,26 @@
+public class BinaryStrings {
+
+    public static void printBinaryStrings(int n, String current, 
+                                          boolean lastWasOne) {
+        // Base case — string of size n is built
+        if (n == 0) {
+            System.out.println(current);
+            return;
+        }
+
+        // Choice 1 — place 0 (always allowed)
+        printBinaryStrings(n - 1, current + "0", false);
+
+        // Choice 2 — place 1 (only if last was NOT 1)
+        if (lastWasOne == false) {
+            printBinaryStrings(n - 1, current + "1", true);
+        }
+    }
+
+    public static void main(String[] args) {
+        int n = 3;
+        System.out.println("All binary strings of size " + n + 
+                           " without consecutive 1s:");
+        printBinaryStrings(n, "", false);
+    }
+}
